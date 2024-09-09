@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Inter';
-    src: url(./social-links-profile-main/assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+    src: url(./social-links-profile-main/assets/fonts/Inter-VariableFont_slnt\,wght.ttf) 
+    format('truetype');
    
 }
 body{

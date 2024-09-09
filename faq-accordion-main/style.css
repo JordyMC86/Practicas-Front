@@ -1,0 +1,74 @@
+
+
+body{
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-size: contain; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: top; /* Centra la imagen */
+    height: 100%;
+}
+.accordion-button{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+h5{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.container{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+}
+
+.card{
+    width: 32rem;
+}
+
+img{
+    width: 1.5rem;
+    height: auto;
+    padding-bottom: 12px;
+}
+
+.accordion-item {
+    border: none; /* Elimina el borde de los items del acordeón */
+}
+
+.accordion-button:hover {
+   color: #ad28eb;
+}
+
+
+.accordion-collapse{
+    color: gray;
+}
+
+   /* Estilos para los íconos personalizados */
+   .accordion-button::after {
+    content: ""; /* Elimina el ícono de flecha por defecto */
+    display: inline-block;
+    width: 16px; /* Ajusta el tamaño del ícono según sea necesario */
+    height: 16px;
+    background-image: url('assets/images/icon-plus.svg'); /* Cambia a la ruta de tu ícono */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease; /* Animación de transición */
+    margin-left: auto; /* Alinea el ícono a la derecha */
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('assets/images/icon-minus.svg'); /* Cambia a la ruta de tu ícono para el estado cerrado */
+    transform: rotate(180deg); /* Rota el ícono si es necesario */
+}
+
+@media(max-width: 400px){
+    body{
+        background-image: url('assets/images/background-pattern-mobile.svg');
+        background-size: contain; /* Ajusta la imagen para cubrir todo el fondo */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: top; /* Centra la imagen */
+        height: 100%;
+}
+}
